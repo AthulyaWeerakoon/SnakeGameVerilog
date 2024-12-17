@@ -1,0 +1,1 @@
+Warning (10268): Verilog HDL information at game_controller.v(9): always construct contains both blocking and non-blocking assignments File: F:/Documents/UoJ/Semester 7/Advanced Digital Design/Project/Quartus/game_controller.v Line: 9
