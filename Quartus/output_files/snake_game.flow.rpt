@@ -1,5 +1,5 @@
 Flow report for snake_game
-Tue Dec 17 06:55:03 2024
+Fri Dec 20 07:33:10 2024
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -38,29 +38,26 @@ https://fpgasoftware.intel.com/eula.
 
 
 
-+-------------------------------------------------------------------------------+
-; Flow Summary                                                                  ;
-+---------------------------------+---------------------------------------------+
-; Flow Status                     ; Successful - Tue Dec 17 06:54:52 2024       ;
-; Quartus Prime Version           ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
-; Revision Name                   ; snake_game                                  ;
-; Top-level Entity Name           ; master_controller                           ;
-; Family                          ; Cyclone V                                   ;
-; Device                          ; 5CGXFC7C7F23C8                              ;
-; Timing Models                   ; Final                                       ;
-; Logic utilization (in ALMs)     ; 97 / 56,480 ( < 1 % )                       ;
-; Total registers                 ; 33                                          ;
-; Total pins                      ; 16 / 268 ( 6 % )                            ;
-; Total virtual pins              ; 0                                           ;
-; Total block memory bits         ; 0 / 7,024,640 ( 0 % )                       ;
-; Total DSP Blocks                ; 0 / 156 ( 0 % )                             ;
-; Total HSSI RX PCSs              ; 0 / 6 ( 0 % )                               ;
-; Total HSSI PMA RX Deserializers ; 0 / 6 ( 0 % )                               ;
-; Total HSSI TX PCSs              ; 0 / 6 ( 0 % )                               ;
-; Total HSSI PMA TX Serializers   ; 0 / 6 ( 0 % )                               ;
-; Total PLLs                      ; 0 / 13 ( 0 % )                              ;
-; Total DLLs                      ; 0 / 4 ( 0 % )                               ;
-+---------------------------------+---------------------------------------------+
++----------------------------------------------------------------------------------+
+; Flow Summary                                                                     ;
++------------------------------------+---------------------------------------------+
+; Flow Status                        ; Successful - Fri Dec 20 07:33:06 2024       ;
+; Quartus Prime Version              ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
+; Revision Name                      ; snake_game                                  ;
+; Top-level Entity Name              ; master_controller                           ;
+; Family                             ; Cyclone IV E                                ;
+; Device                             ; EP4CE115F29C7                               ;
+; Timing Models                      ; Final                                       ;
+; Total logic elements               ; 236 / 114,480 ( < 1 % )                     ;
+;     Total combinational functions  ; 223 / 114,480 ( < 1 % )                     ;
+;     Dedicated logic registers      ; 40 / 114,480 ( < 1 % )                      ;
+; Total registers                    ; 40                                          ;
+; Total pins                         ; 30 / 529 ( 6 % )                            ;
+; Total virtual pins                 ; 0                                           ;
+; Total memory bits                  ; 0 / 3,981,312 ( 0 % )                       ;
+; Embedded Multiplier 9-bit elements ; 0 / 532 ( 0 % )                             ;
+; Total PLLs                         ; 0 / 4 ( 0 % )                               ;
++------------------------------------+---------------------------------------------+
 
 
 +-----------------------------------------+
@@ -68,7 +65,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 12/17/2024 06:53:15 ;
+; Start date & time ; 12/20/2024 07:32:17 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; snake_game          ;
 +-------------------+---------------------+
@@ -79,7 +76,9 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------+----------------------------------------+---------------+-------------------+------------+
 ; Assignment Name                     ; Value                                  ; Default Value ; Entity Name       ; Section Id ;
 +-------------------------------------+----------------------------------------+---------------+-------------------+------------+
-; COMPILER_SIGNATURE_ID               ; 2544255462966.173439859505428          ; --            ; --                ; --         ;
+; COMPILER_SIGNATURE_ID               ; 2544255462966.173466013708032          ; --            ; --                ; --         ;
+; MAX_CORE_JUNCTION_TEMP              ; 85                                     ; --            ; --                ; --         ;
+; MIN_CORE_JUNCTION_TEMP              ; 0                                      ; --            ; --                ; --         ;
 ; PARTITION_COLOR                     ; -- (Not supported for targeted family) ; --            ; master_controller ; Top        ;
 ; PARTITION_FITTER_PRESERVATION_LEVEL ; -- (Not supported for targeted family) ; --            ; master_controller ; Top        ;
 ; PARTITION_NETLIST_TYPE              ; -- (Not supported for targeted family) ; --            ; master_controller ; Top        ;
@@ -93,11 +92,11 @@ https://fpgasoftware.intel.com/eula.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:19     ; 1.0                     ; 4878 MB             ; 00:00:20                           ;
-; Fitter               ; 00:00:59     ; 1.0                     ; 6929 MB             ; 00:00:55                           ;
-; Assembler            ; 00:00:15     ; 1.0                     ; 4838 MB             ; 00:00:07                           ;
-; Timing Analyzer      ; 00:00:08     ; 1.1                     ; 5225 MB             ; 00:00:05                           ;
-; Total                ; 00:01:41     ; --                      ; --                  ; 00:01:27                           ;
+; Analysis & Synthesis ; 00:00:15     ; 1.0                     ; 4821 MB             ; 00:00:15                           ;
+; Fitter               ; 00:00:23     ; 1.0                     ; 5834 MB             ; 00:00:12                           ;
+; Assembler            ; 00:00:04     ; 1.0                     ; 4698 MB             ; 00:00:03                           ;
+; Timing Analyzer      ; 00:00:02     ; 1.0                     ; 4873 MB             ; 00:00:01                           ;
+; Total                ; 00:00:44     ; --                      ; --                  ; 00:00:31                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 

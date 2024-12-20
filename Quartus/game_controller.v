@@ -1,6 +1,5 @@
 module game_controller (
     input wire clk,                   // 50 MHz clock
-    input wire reset_n,               // Reset (active low)
     output reg [6143:0] grid_flat     // Flattened 64x48 grid output as a single wire bus
 );
 
@@ -9,23 +8,14 @@ module game_controller (
 
     integer x, y;
 
-    always @(posedge clk or negedge reset_n) begin
-        if (!reset_n) begin
-            // Initialize grid to black
-            for (x = 0; x < 64; x = x + 1) begin
-                for (y = 0; y < 48; y = y + 1) begin
-                    grid[x][y] <= 2'b00; // Black
-                end
-            end
-        end else begin
-            // Dynamic pattern: alternate green and blue based on position
-            for (x = 0; x < 64; x = x + 1) begin
-                for (y = 0; y < 48; y = y + 1) begin
-                    if ((x + y) % 2 == 0) begin
-                        grid[x][y] <= 2'b10; // Green
-                    end else begin
-                        grid[x][y] <= 2'b11; // Blue
-                    end
+    always @(posedge clk) begin
+        // Dynamic pattern: alternate green and blue based on position
+        for (x = 0; x < 64; x = x + 1) begin
+            for (y = 0; y < 48; y = y + 1) begin
+                if ((x + y) % 2 == 0) begin
+                    grid[x][y] <= 2'b10; // Green
+                end else begin
+                    grid[x][y] <= 2'b11; // Blue
                 end
             end
         end
